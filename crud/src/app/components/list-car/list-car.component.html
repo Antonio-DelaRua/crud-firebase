@@ -1,0 +1,39 @@
+
+
+<div  class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <span class="h3" >Lista de Coches</span>
+            <button class="btn btn-dark btn-lg " style="position:absolute;right: 15px;" routerLink="/create-car">Agregar</button>
+            <table class="table table table-striped mt-5">
+                <thead>
+                  <tr>
+                    <th scope="col">Marca</th>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">Caballos</th>
+                    <th scope="col">año</th>
+                    <th>
+                     
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let coche of coches">
+                    <td scope="row">{{coche.marca}}</td>
+                    <td>{{coche.modelo}}</td>
+                    <td>{{coche.caballos}}cv</td>
+                    <td>{{coche.descripcion}}</td>
+                    <td>
+                      <button (click)="eliminarEmpleado(coche.id)" class= "btn btn-danger"> delete </button>
+                     
+                    </td>
+                 
+                </tbody>
+              </table>
+            
+               
+        </div>
+
+    </div>
+</div>
+

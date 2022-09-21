@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "garage-d79b5": {
+      "hosting": {
+        "crud": [
+          "garage-d79b5"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "garage-d79b5"
+  }
+}
